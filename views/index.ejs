@@ -1,0 +1,14 @@
+<div id="main">
+    <form action='/quote' method='post'>
+        <h1>Welcome to Quoting Dojo</h1>
+        Your Name: <input class="form" type='text' name='name'><br> 
+        Your quote:<br>
+            <textarea class="form" name="quote" type="text" rows="4" cols="50"></textarea><br>
+            <input class="form" type='submit' value='Submit'>
+        </form>
+<% if(typeof(errors) != 'undefined' ) { %>
+     <% for (var x in errors) { %>
+      <h3><%= errors[x].message %></h3>
+     <% } %>
+ <% } %>
+</div>

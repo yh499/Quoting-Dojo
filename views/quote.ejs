@@ -1,0 +1,9 @@
+<div id="resultBox">
+    <h2>Submitted information:</h2>
+    <% for (var x in users) { %>
+        <hr><h3>Name: <%= users[x].name %></h3>
+        <h4>Quote: <%= users[x].quote %> </h4>
+        <h5>Created at: <%= users[x].createdAt %></h5>
+    <% } %><hr>
+    <a href="/"><h4>Go back</h4></a>
+</div>
